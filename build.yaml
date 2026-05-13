@@ -19,11 +19,17 @@
 ---
 include:
   - board: xiao_ble//zmk
-    shield: anywhy_flake_left
+    shield: anywhy_flake_dongle prospector_adapter
     snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    artifact-name: anywhy_flake_dongle
+  - board: xiao_ble//zmk
+    shield: anywhy_flake_left
+    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+    artifact-name: anywhy_flake_left
   - board: xiao_ble//zmk
     shield: anywhy_flake_right
+    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+    artifact-name: anywhy_flake_right
   - board: xiao_ble//zmk
     shield: settings_reset
-  - board: xiao_ble//zmk
-    shield: anywhy_flake_dongle prospector_adapter
