@@ -5,36 +5,6 @@
 / {
     combos {
         compatible = "zmk,combos";
-
-        bt_sel_3 {
-            bindings = <&bt3>;
-            key-positions = <42 30>;
-            layers = <2>;
-        };
-
-        bt_sel_4 {
-            bindings = <&bt4>;
-            key-positions = <30 18>;
-            layers = <2>;
-        };
-
-        enter_gaming {
-            bindings = <&sl 3>;
-            key-positions = <26 15 28>;
-            layers = <2>;
-        };
-
-        leave_gaming {
-            bindings = <&sl 0>;
-            key-positions = <31 20 33>;
-            layers = <4>;
-        };
-
-        grave {
-            bindings = <&kp GRAVE>;
-            key-positions = <13 25>;
-            layers = <3>;
-        };
     };
 
     macros {
@@ -125,6 +95,7 @@
         compatible = "zmk,keymap";
 
         base {
+            display-name = "Base";
             bindings = <
 &none      &none     &none     &none      &none      &none     &none    &none      &none       &none     &none                &none
 &kp ESC    &kp Q     &kp W     &kp E      &kp R      &kp T     &kp Y    &kp U      &kp I       &kp O     &kp P                &kp BSPC
@@ -135,6 +106,7 @@
         };
 
         symbol {
+            display-name = "Symbol";
             bindings = <
 &none  &none       &none        &none      &none      &none       &none        &none         &none      &none      &none       &none
 &none  &kp GRAVE   &kp LT       &kp GT     &kp DQT    &kp DOT     &kp AMPS     &kp UNDER     &kp LBKT   &kp RBKT   &kp PRCNT   &none
@@ -145,6 +117,7 @@
         };
 
         nav_fn {
+            display-name = "NavFn";
             bindings = <
 &none  &none    &none   &none   &none   &none             &none          &none         &none         &none         &none          &none
 &none  &kp F12  &kp F7  &kp F8  &kp F9  &soft_off         &kp LS(LEFT)   &kp LS(HOME)  &kp LC(FSLH)  &kp LS(END)   &kp LS(RIGHT)  &none
@@ -155,6 +128,7 @@
         };
 
         gaming {
+            display-name = "Gaming";
             bindings = <
 &none     &none      &none   &none      &none      &none     &none   &none      &none      &none     &none      &none
 &kp ESC   &kp TAB    &kp Q   &kp W      &kp E      &kp R     &kp Y   &kp U      &kp I      &kp O     &kp P      &kp BSPC
@@ -165,6 +139,7 @@
         };
 
         gaming_num {
+            display-name = "Gaming2&Num";
             bindings = <
 &none      &none    &none     &none     &none      &none      &none       &none   &none   &none   &none   &none
 &kp PG_UP  &kp N1   &kp N2    &kp N3    &kp N4     &kp N5     &bt BT_CLR  &kp N7  &kp N8  &kp N9  &trans  &trans
