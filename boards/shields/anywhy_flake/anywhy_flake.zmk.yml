@@ -8,5 +8,6 @@ features:
   - keys
   - studio
 siblings:
+  - anywhy_flake_dongle
   - anywhy_flake_left
   - anywhy_flake_right
