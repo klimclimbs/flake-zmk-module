@@ -25,3 +25,7 @@ include:
     shield: anywhy_flake_right
   - board: xiao_ble//zmk
     shield: settings_reset
+  - board: xiao_ble//zmk
+    shield: anywhy_flake_left_dongle prospector_adapter
+  - board: xiao_ble//zmk
+    shield: anywhy_flake_right_dongle prospector_adapter
